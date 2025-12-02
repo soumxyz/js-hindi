@@ -1,0 +1,10 @@
+javascript execution context:
+|
+|->global execution context
+|->functional execution context
+|->eval execution context
+
+
+JS code run in two phases:
+|->memory creation phase/creation phase
+|->execution phase
