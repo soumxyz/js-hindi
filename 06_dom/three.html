@@ -16,14 +16,16 @@
 <script>
     const divi = document.createElement('div')
     console.log(divi);
-    div.className = "main"
-    div.id = Math.round(Math.random() * 10 + 1)
-    div.setAttribute('title', 'generate a type')
-    div.style.backgroundColor = 'red'
+    divi.className = "main"
+    divi.id = Math.round(Math.random() * 10 + 1)
+    divi.setAttribute('title', 'generate a type')
+    divi.style.backgroundColor = 'red'
     // div.innerText = 'this is a div'
-    document.createTextNode()
-
-
+    const  addText = document.createTextNode("chai aur code")
+    divi.appendChild(addText)
+    document.body.appendChild(divi)
+    
+    
 
 </script>
 </html>
