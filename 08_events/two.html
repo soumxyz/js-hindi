@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>chai aur code</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    const som = function(){
+        console.log("Time ho gya re")
+    }
+    const changetext = function(){
+        document.querySelector('h1').innerText = "Time khatam hua kaliya"
+    }
+    
+    const changeme = setTimeout(changetext,4000)
+
+    document.querySelector('#stop').addEventListener('click',function(){
+        clearTimeout(changeme)
+        console.log("Timer stopped")
+    })
+</script>
+</html>
