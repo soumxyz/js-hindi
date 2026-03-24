@@ -1,0 +1,46 @@
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#f4f4f4;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.card{
+    width:250px;
+    background:#212121;
+    padding:20px;
+    border-radius:10px;
+    text-align:center;
+
+    border:2px solid #000;      /* defined border */
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+.card img{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    object-fit:cover;
+    border:3px solid white;
+}
+
+.card h2{
+    margin:15px 0;
+    color:white;                /* important for dark card */
+}
+
+button{
+    padding:10px 15px;
+    border:none;
+    background:#007bff;
+    color:white;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#0056b3;
+}

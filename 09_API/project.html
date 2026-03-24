@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="project.css">
+</head>
+
+<body>
+
+    <div class="card">
+
+        <img id="profile-img"
+        src="https://avatars.githubusercontent.com/u/583231?v=4"
+        alt="profile photo">
+
+        <h2 id="name-text">Soumya</h2>
+
+        <button id="followers-btn">Get Followers</button>
+
+    </div>
+
+    <script>
+        document.querySelector("#followers-btn").addEventListener("click", function(){
+            const requestUrl = "https://api.github.com/users/soumxyz"
+            const xml = new XMLHttpRequest();
+            xml.open('GET' , requestUrl)
+            xml.onreadystatechange = function(){
+                if(xml.readyState === 4){
+                    console.log("Data received")
+                    const data = JSON.parse(xml.response)
+                    console.log(data)
+                    document.querySelector("#followers-btn").innerText
+                }
+            }
+            console.log(xml.readyState)
+            xml.send()
+        })
+    </script>
+
+</body>
+</html>
